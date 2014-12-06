@@ -86,8 +86,8 @@ else:
         os.path.join(BASE_DIR, 'static'),
     )
 
-import ipdb
-ipdb.set_trace()
+# import ipdb
+# ipdb.set_trace()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
