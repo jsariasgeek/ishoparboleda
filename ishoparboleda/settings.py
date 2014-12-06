@@ -22,7 +22,7 @@ SECRET_KEY = 't5cyimm@i*i=@h!@+lj&x4@x125z2kb^iah(_sn&o-0miofdq9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = socket.gethostname != 'MacBook-Pro-de-Server.local'
+DEBUG = socket.gethostname() == 'MacBook-Pro-de-Server.local'
 
 
 
@@ -60,7 +60,7 @@ WSGI_APPLICATION = 'ishoparboleda.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-if DEBUG == True:
+if DEBUG:
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -86,8 +86,8 @@ else:
         os.path.join(BASE_DIR, 'static'),
     )
 
-# import ipdb
-# ipdb.set_trace()
+import ipdb
+ipdb.set_trace()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
