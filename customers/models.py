@@ -1,6 +1,6 @@
 from django.db import models
 from products.models import Product as Product
-from phonenumber_field.modelfields import PhoneNumberField
+
 
 
 
