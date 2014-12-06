@@ -26,7 +26,7 @@ DEBUG = socket.gethostname != 'MacBook-Pro-de-Server.local'
 
 
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ['*']
 
@@ -60,7 +60,7 @@ WSGI_APPLICATION = 'ishoparboleda.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-if DEBUG:
+if DEBUG == True:
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
