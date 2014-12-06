@@ -22,7 +22,7 @@ SECRET_KEY = 't5cyimm@i*i=@h!@+lj&x4@x125z2kb^iah(_sn&o-0miofdq9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = socket.gethostname == 'MacBook-Pro-de-Server.local'
+DEBUG = socket.gethostname != 'MacBook-Pro-de-Server.local'
 
 
 
@@ -85,6 +85,9 @@ else:
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, 'static'),
     )
+
+# import ipdb
+# ipdb.set_trace()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
